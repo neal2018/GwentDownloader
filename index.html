@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gwent Launcher</title>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="renderer.js" defer></script>
+</head>
+
+<body>
+  <div class="left-part">
+    <h1>Gwent Launcher</h1>
+    <div id="output">
+      <div id="content">
+        <p>waiting for action...</p>
+      </div>
+    </div>
+  </div>
+  <div class="right-part">
+    <div class="select-container">
+      <div class="preference">
+        <label class="feature-select-label">Source:
+          <select class="feature-select" id="feature-selector">
+            <option value="diy">LegacyGwent</option>
+          </select>
+        </label>
+      </div>
+      <div class="preference">
+        <label class="feature-select-label">Server:
+          <select class="feature-select" id="feature-selector">
+            <option class="feature-select-option" value="diy">DIY</option>
+            <option class="feature-select-option" value="original">Original</option>
+            <option class="feature-select-option" value="geziGame">geziGame</option>
+          </select>
+        </label>
+      </div>
+      <div class="preference">
+        <span class="feature-select-label">Location:</span>
+        <label class="feature-select">Folder
+          <input class="feature-file-select" type="file" webkitdirectory />
+        </label>
+      </div>
+    </div>
+    <div class="button-container">
+      <button id="update-button" class="click-button">Update</button>
+      <button id="launch-button" class="click-button">Launch</button>
+    </div>
+  </div>
+</body>
+
+</html>
